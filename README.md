@@ -1,2 +1,2 @@
 # zclp-rs
-My own implementation of QUIC like protocol in rust
+My own implementation of QUIC protocol in rust
