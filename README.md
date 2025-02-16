@@ -1,4 +1,4 @@
-# zclp-rs
+# zclp-rs 🦀
 
 > [!TIP]
 > [Describing QUIC's Protocol Data Units with Augmented Packet Header Diagrams](https://www.ietf.org/archive/id/draft-mcquistin-quic-augmented-diagrams-05.html)
