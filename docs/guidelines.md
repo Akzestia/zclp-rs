@@ -10,6 +10,7 @@
 8. [CI & CD](#ci--cd)
 9. [Code formatting](#code-formatting)
 10. [PRs & commits](#prs--commits)
+11. [AI Bs](#usage-of-ai)
 
 ### Introduction
 
@@ -135,3 +136,7 @@ For rust just use rust fmt.
 ```
 TODO
 ```
+
+### Usage of Ai
+Pls don't use this shit, It is ain't good enough for this shit xD.</br>
+Like you can try, but don't ^_^.
