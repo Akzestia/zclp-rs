@@ -6,6 +6,14 @@ struct VariableLengthInteger {
     value: Vec<u8>, // ((2^Len)*8)-2 bits
 }
 
+impl VariableLengthInteger {
+    pub fn new() {
+        Self { len: 0, value: 0 }
+    }
+
+    pub fn set(&mut self, value: u64) {}
+}
+
 #[allow(dead_code)]
 mod frames {
     use super::VariableLengthInteger;
