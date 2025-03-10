@@ -11,7 +11,33 @@ impl VariableLengthInteger {
         Self { len: 0, value: 0 }
     }
 
-    pub fn set(&mut self, value: u64) {}
+    pub fn new_with_val(value: u64) {
+        let mut vl = VariableLengthInteger::new();
+        vl.set(value);
+    }
+
+    pub fn set(&mut self, value: u64) {
+        let mut required_len: u64 = 0;
+
+        if value <= 0x3F {
+            required_len = 0;
+        } else if value <= 0x3FFF {
+            required_len = 1;
+        } else if value <= 0x3FFFFFFF {
+            required_len = 2;
+        } else {
+            required_len = 3;
+        }
+
+        let max_value: u64 = (1ULL << ((1 << required_len) * 8 - 2)) - 1;
+
+        if value > max_value {
+            throw!("Invalid value for vl integer");
+        }
+
+        self.len = required_len;
+        self.value = value;
+    }
 }
 
 #[allow(dead_code)]
